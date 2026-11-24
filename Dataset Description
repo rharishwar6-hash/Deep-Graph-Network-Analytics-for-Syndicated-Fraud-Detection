@@ -1,0 +1,55 @@
+Deep Graph Network Analytics for Syndicated Fraud Detection
+
+Project Overview
+
+This project focuses on identifying coordinated financial fraud networks using Graph Analytics and Machine Learning. It analyzes relationships between users, devices, IP addresses, bank accounts, and financial transactions to detect suspicious patterns and organized fraud rings.
+
+Dataset Description
+
+The dataset is fully synthetic and contains:
+
+- 1,000 users
+- 850 devices
+- 1,100 bank accounts
+- 1,000 user-device relationships
+- 1,000 user-IP relationships
+- 5,660 financial transactions
+- 8 planted fraud rings involving 64 users
+- 160 suspicious transactions and 5,500 normal transactions
+
+Dataset Files
+
+- "users.csv" – User information and fraud-ring membership labels.
+- "devices.csv" – Device details and operating system information.
+- "bank_accounts.csv" – Bank and wallet account information.
+- "user_accounts.csv" – User-to-account ownership relationships.
+- "user_device.csv" – Relationships between users and devices.
+- "user_ip.csv" – User-to-IP address connections.
+- "transactions.csv" – Financial transactions with timestamps, amounts, channels, and suspicious transaction labels.
+- "fraud_rings_ground_truth.csv" – Fraud-ring membership and known fraud patterns for evaluation.
+
+Key Objectives
+
+1. Identify suspicious financial transaction patterns.
+2. Detect shared devices and IP addresses among multiple users.
+3. Discover coordinated fraud rings using graph-based community detection.
+4. Analyze transaction networks using centrality measures and network relationships.
+5. Generate graph-based features and embeddings for fraud detection.
+6. Build machine learning models to classify suspicious activities.
+
+Technologies & Methodologies
+
+- Python
+- Pandas and NetworkX
+- Neo4j
+- Graph Analytics
+- Louvain / Leiden Community Detection
+- Node2Vec / GraphSAGE
+- XGBoost
+- Data Visualization
+
+Expected Outcome
+
+Develop a graph-based fraud detection approach that identifies suspicious users, interconnected accounts, unusual transaction patterns, and coordinated fraud rings.
+
+Note: This is a fully synthetic dataset created for academic and project development purposes. Ground-truth fraud labels should only be used for evaluation, not as input features during unsupervised fraud discovery or model training.
