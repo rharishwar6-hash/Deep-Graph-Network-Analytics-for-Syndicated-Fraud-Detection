@@ -1,0 +1,90 @@
+WEEK 1 TASK ALLOCATION Project 3: Deep Graph Network Analytics for
+Syndicated Fraud Detection Team size: 2 members
+
+PROJECT WEEK 1 OBJECTIVES As specified in the Zaalima project
+document: 1. Extract relational transactional datasets (e.g., healthcare
+claims or peer-to-peer transfers) and entity metadata. 2. Architect a
+scalable property graph data model mapping nodes (users, devices, bank
+accounts) and edges (transactions, shared IP addresses). 3. Ingest the
+modeled data into a graph database engine (Neo4j or Amazon Neptune).
+
+MEMBER 1: DHANANJAY LINGAM Role: Data Engineering and Dataset
+Preparation - Identify and acquire a suitable relational transactional
+dataset. - Inspect its structure, columns, data types and record
+counts. - Identify relevant entities such as users, accounts, devices
+and IP addresses, based on fields available. - Check missing values,
+duplicates and inconsistent identifiers. - Prepare processed transaction
+and entity data files for graph ingestion. - Create a data dictionary
+and document data quality checks.
+
+Expected deliverables: - Dataset source and access notes. - Cleaned
+transaction data. - Entity metadata files, where available. - Data
+dictionary. - Data quality summary.
+
+MEMBER 2: [TEAMMATE NAME] Role: Graph Architecture and Database Setup -
+Design the property graph data model based on the available dataset
+fields. - Define node labels such as User, Account, Device and
+IPAddress, where supported. - Define relationship types such as
+TRANSFERRED_TO, USES_DEVICE and CONNECTED_TO_IP, where supported. -
+Specify relevant node and relationship properties. - Set up Neo4j or
+Amazon Neptune. - Prepare initial Cypher queries or equivalent commands
+to create nodes and relationships. - Develop and test the initial graph
+ingestion process using sample data.
+
+Expected deliverables: - Property graph schema documentation and
+diagram. - Graph database setup notes. - Initial graph creation
+scripts. - Initial ingestion script and test evidence.
+
+DAILY WORK PLAN Day 1 Dhananjay: Identify a suitable dataset and record
+its source, access conditions and structure. Member 2: Draft the initial
+graph schema and candidate node and relationship types.
+
+Day 2 Dhananjay: Load and inspect the dataset; review columns, data
+types, record counts and missing values. Member 2: Finalise node labels,
+relationship types and properties based on actual dataset fields.
+
+Day 3 Dhananjay: Identify entities and prepare initial
+transaction/entity extracts. Member 2: Set up the graph database and
+create appropriate initial constraints or indexes.
+
+Day 4 Dhananjay: Clean records and resolve duplicate or inconsistent
+identifiers where possible. Member 2: Write graph creation queries and
+test them with sample records.
+
+Day 5 Dhananjay: Prepare processed data files and the data dictionary.
+Member 2: Develop the initial ingestion script using the agreed data
+format.
+
+Day 6 Dhananjay: Validate processed data and document data quality
+findings. Member 2: Run a sample ingestion and check that nodes and
+relationships are created correctly.
+
+Day 7 Both members: Review Week 1 deliverables, update documentation,
+resolve issues and push meaningful GitHub commits.
+
+SUGGESTED GITHUB REPOSITORY STRUCTURE data/ raw/ processed/ src/
+data_preprocessing.py graph_ingestion.py database/ graph_schema.md
+constraints.cypher create_graph.cypher docs/ data_dictionary.md
+week1_progress.txt README.md
+
+SUGGESTED COMMIT MESSAGES - docs: add week 1 task allocation - data: add
+initial dataset inspection - data: add transaction cleaning workflow -
+docs: add data dictionary - graph: document property graph schema -
+graph: add initial database setup scripts - graph: add sample ingestion
+workflow - docs: update week 1 progress and deliverables
+
+WEEK 1 COMPLETION CHECKLIST [ ] Dataset selected and source documented [
+] Transactional data inspected [ ] Relevant entity metadata identified [
+] Data quality checks completed [ ] Processed data prepared [ ] Property
+graph schema documented [ ] Graph database configured [ ] Initial graph
+ingestion tested [ ] Week 1 documentation updated [ ] Both members have
+pushed meaningful commits
+
+NOTES - The dataset may not contain every example entity listed in the
+project brief. Define nodes and relationships only when supported by
+actual dataset fields. - Agree on the dataset, identifiers and file
+formats before building the ingestion pipeline. - This is a proposed
+division of the official Week 1 requirements for a two-member team. - Do
+not put sensitive personal or financial data, credentials or secrets in
+a public repository. Use appropriately licensed, anonymised or synthetic
+data.
